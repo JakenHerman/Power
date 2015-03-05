@@ -1,15 +1,30 @@
+import java.util.Scanner;
+
 public class Test {
 
-    public int power1(int x, int n){
+    public static int power1(int x, int n){
         //Returns the value of x raised to the nth power.
 	    //Preconditions: n >= 0
 	    //Postcondition: The computer value is returned.
 
 	    if(n == 0)
+        {
 	        return 1;
-	    else
-	        //else here.
-
+        }
+        
+        else
+        {
+            int pow = 1;
+            
+            for(int i = 0; i < n; i++)
+            {
+                pow *= x;
+            }
+        
+            return pow;
+            
+        }
+        
     }
 
 
@@ -17,7 +32,7 @@ public class Test {
 
     public static void main(String[] args){
 
-
+        
     }
 
 }
